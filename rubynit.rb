@@ -12,7 +12,7 @@ end
 
 # If user don't input ARGV, explain how the command works then exit
 def check_if_user_gave_input
-  abort('mkdir : missing input. Retry using rb-proj-init name_of_the_project') if ARGV.empty?
+  abort('mkdir : missing input. Retry using rubynit project_name') if ARGV.empty?
 end
 
 # Make Gemfile with THP's usual gems
