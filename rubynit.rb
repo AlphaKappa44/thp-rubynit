@@ -19,8 +19,7 @@ end
 def make_gemfile(project_name)
   file = File.open("#{project_name}/Gemfile", 'w')
   file.puts "source 'https://rubygems.org'"
-  file.puts "source 'ruby 2.7'"
-  file.puts "gem 'nokogiri'"
+  file.puts "ruby '2.7'"
   file.puts "gem 'rspec'"
   file.puts "gem 'pry'"
   file.puts "gem 'rubocop', '~> 0.57.2'"
